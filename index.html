@@ -50,27 +50,30 @@
 		</div>
 	</header>
 
-	<div class="carousel-section">
-		<div class="carousel">
-			<div class="carousel-items">
-				<img data-state="current" src="img/app-musicfest-1.jpg" alt="">
-				<img src="img/app-musicfest-2.jpg" alt="">
-				<img src="img/app-musicfest-3.jpg" alt="">
-				<img src="img/app-musicfest-4.jpg" alt="">
-				<img src="img/app-musicfest-5.jpg" alt="">
-			</div>
-			<div class="carousel-buttons">
-				<button class="previous"><img src="img/arrow-left.png"></button>
-				<button class="next"><img src="img/arrow-right.png"></button>
-			</div>
-		</div>
+
+	<ul class="tabs">
+		<li><a class="tab" data-state="current" href="#tab-1"><div class="circle"></div></a></li>
+		<li><a class="tab" href="#tab-2"><div class="circle"></div></a></li>
+		<li><a class="tab" href="#tab-3"><div class="circle"></div></a></li>
+	</ul>
+
+	<div class="tab-panel" data-state="current" id="tab-1">
+		<img class="tab-img flex-img" src="img/screen-all.jpg">
 	</div>
 
+	<div class="tab-panel" id="tab-2">
+		<img class="tab-img flex-img" src="img/screen-news.jpg">
+	</div>
+
+	<div class="tab-panel" id="tab-3">
+		<img class="tab-img flex-img" src="img/screen-schedule.jpg">
+	</div>
 
 	<footer>© CAROLINE GUINDON 2013. ALL RIGHTS RESERVED</footer>
 
 	<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/tabs.js"></script>
 </body>
 </html>
 

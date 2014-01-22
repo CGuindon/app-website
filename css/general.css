@@ -7,7 +7,6 @@ body {
 }
 
 a {
-	color: #fff;
 	text-decoration: none;
 }
 
@@ -60,46 +59,47 @@ h2 {
 	max-width: 15em;
 }
 
-
-.carousel-section {
-
+.circle {
+    width: 0.4em;
+    height: 0.4em;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #ec5d37;
 }
 
-.carousel {
-	padding-bottom: 56.23%; /* take the ration of the image size and calculate height/width x 100 [this is the percentage used] */
-	position: relative;
-}
 
-.carousel-items img {
-	position: absolute;
-	top: 0;
-	left: 0;
+.tab-img {
 	width: 100%;
+
 }
 
-.carousel-items [data-state="current"] {
-	z-index: 100;
+.tabs {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
 }
 
-.carousel-items [data-state="incoming"] {
-	z-index: 101;
+.tabs li {
+	display: inline-block;
 }
 
-.carousel-buttons {
-	position: absolute;
-	z-index: 1000;
+.tabs a {
+	color: #2e2e2e;
+	font-size: 3em;
+	padding: 0.4em;
 }
 
-button {
-	background-color: none;
-	border: none;
+.tab {
+	display: inline-block;
+	padding: 1em;
 }
 
-button img {
-	width: 50%;
-	display: block;
-	margin: auto;
+.tab[data-state="current"] {
+	background-color: #ccc;
 }
+
 
 
 footer {
