@@ -6,45 +6,6 @@ body {
 	padding: 0;
 }
 
-.skiplinks{
-	margin: 0;
-	padding: 0;
-	position: absolute;
-	z-index:3000;
-	width:100%;
-	font-size: 1.25rem;
-	font-weight:bold;
-	list-style-type: none;
-}
-
-.skiplinks a,
-.skiplinks a:link,
-.skiplinks a:visited{
-	padding:0.75em 1em;
-	position: absolute;
-	top: -10em;
-	font-family: 'Helvetica', sans-serif;
-	background-color: #000;
-	color: #fff;
-	text-decoration: none;
-}
-
-.skiplinks a:focus{
-top: 0;
-}
-
-a:hover,
-a:active{
-/* its ok to remove outline here because its only for the mouse users. */
-	outline:none;
-}
-
-a:focus{
-/*YOU MUST ALWAYS HAVE AN OUTLINE HERE*/
-outline: 2px solid #000;
-}
-
-
 a {
 	color: #fff;
 	text-decoration: none;
@@ -100,6 +61,47 @@ h2 {
 }
 
 
+.carousel-section {
+
+}
+
+.carousel {
+	padding-bottom: 56.23%; /* take the ration of the image size and calculate height/width x 100 [this is the percentage used] */
+	position: relative;
+}
+
+.carousel-items img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.carousel-items [data-state="current"] {
+	z-index: 100;
+}
+
+.carousel-items [data-state="incoming"] {
+	z-index: 101;
+}
+
+.carousel-buttons {
+	position: absolute;
+	z-index: 1000;
+}
+
+button {
+	background-color: none;
+	border: none;
+}
+
+button img {
+	width: 50%;
+	display: block;
+	margin: auto;
+}
+
+
 footer {
 	font-size: 0.5em;
 	margin-top: 10em;
@@ -107,11 +109,6 @@ footer {
 	background-color: #2e2e2e;
 	color: #f0eef3;
 }
-
-
-
-
-
 
 
 @media only screen and (min-width: 30em) {
