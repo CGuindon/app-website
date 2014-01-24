@@ -68,6 +68,9 @@ h2 {
     background: #ec5d37;
 }
 
+.tab[data-state="current"] .circle {
+	background: #2e2e2e;
+}
 
 .tab-img {
 	width: 100%;
@@ -86,7 +89,6 @@ h2 {
 }
 
 .tabs a {
-	color: #2e2e2e;
 	font-size: 3em;
 	padding: 0.4em;
 }
@@ -94,10 +96,6 @@ h2 {
 .tab {
 	display: inline-block;
 	padding: 1em;
-}
-
-.tab[data-state="current"] {
-	background-color: #ccc;
 }
 
 
