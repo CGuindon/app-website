@@ -59,6 +59,44 @@ h2 {
 	max-width: 15em;
 }
 
+
+
+dialog {
+	border: 2px solid #000;
+	border-radius: 8px;
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+
+/* This is the background after clicking the button */
+dialog::backdrop {
+	background-color: rgba(0,255,0,0.5);
+}
+
+/* Need this for other browsers */
+dialog + .backdrop {
+	background-color: rgba(255,255,255,0.5);
+}
+
+#btn-close {
+	width: 32px;
+	height: 32px;
+	border-radius: 16px;
+	text-align: center;
+	line-height: 24px;
+	color: #99ffcc;
+	border: 2px solid #99ffcc;
+	background-color: rgba(0,0,0,0.5);
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+	font-weight: lighter;
+	cursor: pointer;
+	position: absolute;
+	top: -16px;
+	right: -16px;
+}
+
+
+
+
 .circle {
     width: 0.4em;
     height: 0.4em;
