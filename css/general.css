@@ -162,6 +162,8 @@ dialog + .backdrop {
 	padding: 1em;
 }
 
+
+
 /* FEATURES SECTION */
 
 .features-section {
@@ -224,6 +226,44 @@ dialog + .backdrop {
 }
 
 
+/* FEATURE TABS SECTION */
+
+.tabb[data-state="current"] .circle {
+	background: #2e2e2e;
+}
+
+.tabb-img {
+	width: 100%;
+
+}
+
+.app-feat-img {
+	background-color: #1e1e1e;
+	height: 25em;
+	background-position: 50% top;
+	background-size: 180%;
+	background-repeat: no-repeat;
+}
+
+.app-1 {
+	background-image: url('../img/app-musicfest-2.jpg');
+}
+
+.app-2 {
+	background-image: url('../img/app-musicfest-3.jpg');
+}
+
+.app-3 {
+	background-image: url('../img/app-musicfest-5.jpg');
+}
+
+.app-4 {
+	background-image: url('../img/app-musicfest-4.jpg');
+}
+
+
+
+
 
 
 footer {
@@ -232,6 +272,22 @@ footer {
 	padding: 2em 2em 3em;
 	background-color: #2e2e2e;
 	color: #f0eef3;
+}
+
+@media only screen and (min-width: 23em) {
+
+	.app-feat-img {
+		height: 30em;
+	}
+
+}
+
+@media only screen and (min-width: 27em) {
+
+	.app-feat-img {
+		height: 40em;
+	}
+
 }
 
 
@@ -247,10 +303,22 @@ footer {
 
 }
 
+@media only screen and (min-width: 36em) {
+
+	.app-feat-img {
+		height: 50em;
+	}
+
+}
+
 @media only screen and (min-width: 41em) {
 
 		.intro {
 		margin: 0;
+	}
+
+	.app-feat-img {
+		background-size: 150%;
 	}
 
 }
