@@ -183,6 +183,20 @@ dialog + .backdrop {
 	margin: 0 2rem;
 }
 
+.features a {
+	display: block;
+	position: relative;
+}
+
+.features a[data-state="current"]::after {
+	content: url("../img/i-down-arrow.svg");
+	position: absolute;
+	bottom: -20px;
+	left: 50%;
+	margin-left: -40px;
+	-webkit-transform: scale(0.5);
+}
+
 .features img {
 	width: 150px;
 	opacity: 0;
@@ -262,7 +276,12 @@ dialog + .backdrop {
 }
 
 
+/* TESTIMONIALS SECTION */
 
+.dino-name {
+	font-size: 3em;
+	color: green;
+}
 
 
 
